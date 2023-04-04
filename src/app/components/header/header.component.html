@@ -1,0 +1,37 @@
+
+<div class="container">
+    <label for="gene_id" class="form-label">Gene ID : Uses the given identifier to return its latest version</label>
+    <div class="form-group">
+        <input type="text" #box  placeholder="Enter id" name="id" value="ENSG00000157764"/>
+        <button class='btn btn-sm btn-primary' (click)="getBoxValue(box.value)" >Click</button>
+    </div>
+    <table class="table table-striped" style="border: 1px solid black; 
+            margin: 0 auto;">
+        <thead>
+            <tr> 
+                <th>id</th>
+                <th>type</th>
+                <th>version</th>
+                <th>latest</th>
+                <th>is_current</th> 
+                <th>peptide</th>
+                <th>release</th>
+                <th>assembly</th>
+                <th>possible_replacement</th><tbody>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of listData ">
+                <td><span>{{user.id}}</span></td>   
+                <td><span>{{user.type}}</span></td>
+                <td><span>{{user.version}}</span></td>
+                <td><span>{{user.latest}}</span></td>
+                <td><span>{{user.is_current}}</span></td> 
+                <td><span>{{user.peptide}}</span></td>
+                <td><span>{{user.release}}</span></td> 
+                <td><span>{{user.assembly}}</span></td>
+                <td><span>{{user.possible_replacement}}</span></td>
+            </tr>
+        </tbody>
+    </table><br>
+</div>

@@ -1,0 +1,67 @@
+<div>
+
+
+
+
+    
+    <input class="large_input" type="textarea" #box1  placeholder="Sequence 1" name="seq1" value="CCGAC" size="170"/>
+    <br>
+    <button class='btn btn-sm btn-primary' (click)="getBoxValue(box1.value)">Search the sequence</button>
+    
+    <br>
+    <b>id</b> <div  id="display_i"></div>
+    <br>
+    <b>description</b> <div id="display_d"></div>
+    <br>
+    <b>molecule</b> <div    id="display_m"></div>
+    <br>
+    <b>sequence</b> <pre  id="display_s" ></pre>
+   <!--
+    <br>
+    <b>id</b> {{result_2.id}}
+    <br>
+    <b>description</b> {{result_2.desc}}
+    <br>
+    <b>molecule</b> {{result_2.molecule}}
+    <br>
+    <b>sequence</b> <pre>{{result_2.seq}}</pre>
+    -->
+    <b>found sequence</b>
+    <br>
+    
+    <pre id="display"></pre>
+    
+
+
+
+
+
+    <!--
+    <input type="text" #box1  placeholder="Sequence 1" name="seq1" value="ENSE00001154485"/>
+    <input type="text" #box2  placeholder="Sequence 2" name="seq2" value="ENSG00000248378"/>
+    <button class='btn btn-sm btn-primary' (click)="getBoxValue(box1.value, box2.value)">Click</button>
+    <br>
+    <b>id</b> {{result_1.id}}
+    <br>
+    <b>description</b> {{result_1.desc}}
+    <br>
+    <b>molecule</b> {{result_1.molecule}}
+    <br>
+    <b>sequence</b> <pre>{{result_1.seq}}</pre>
+   
+    <br>
+    <b>id</b> {{result_2.id}}
+    <br>
+    <b>description</b> {{result_2.desc}}
+    <br>
+    <b>molecule</b> {{result_2.molecule}}
+    <br>
+    <b>sequence</b> <pre>{{result_2.seq}}</pre>
+    
+    <b>compartment of two sequences</b>
+    <br>
+    <pre id="display" style="word-wrap:break-word;"></pre>
+    -->
+</div>
+
+

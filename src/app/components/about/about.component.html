@@ -1,0 +1,25 @@
+<div class="container">
+    <label for="gene_id" class="form-label">Ensembl ID : Looks up an external symbol and returns all Ensembl objects linked to it</label>
+    <div class="form-group">
+        <input type="text" #box1  placeholder="Enter species" name="id" value="human" list="browsers1"/>
+        <datalist id="browsers1">
+            <option value="human">
+            <option value="homo_sapiens">
+          </datalist>
+        <input type="text" #box2  placeholder="Enter symbol" name="id" value="BRAF" list="browsers2"/>
+        <datalist id="browsers2">
+            <option value="BRAF">
+            <option value="BRCA2">
+          </datalist>
+        <button class='btn btn-sm btn-primary' (click)="get_about_xrefs_BoxValue(box1.value,box2.value)" >Click</button>
+    </div>
+    <ul>
+        <li *ngFor="let item of TodoList">
+            <td>
+                <span> 
+                    <td><b>id</b></td>  {{item.id}} - <td><b>type</b></td> {{item.type}}
+                </span>
+            </td>   
+        </li>
+    </ul>
+</div> 
